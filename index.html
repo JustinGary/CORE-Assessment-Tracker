@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORE Skills Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CORE Skills Self-Assessment</h1>
+        <form id="assessmentForm">
+            <div class="category">
+                <h2>Curiosity</h2>
+                <div class="question">
+                    <p>I enjoy learning about a variety of subjects</p>
+                    <select name="curiosity-1" required>
+                        <option value="" disabled selected>Select a score</option>
+                        <option value="1">1 - Not characteristic of me</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Very characteristic of me</option>
+                    </select>
+                </div>
+                <!-- Add remaining curiosity questions similarly -->
+            </div>
+
+            <!-- Add other categories (Obsession, Resilience, Empathy) similarly -->
+
+            <button type="submit">Calculate Scores</button>
+        </form>
+
+        <div id="results" class="hidden">
+            <h2>Your Results</h2>
+            <p>Curiosity: <span id="curiosityScore">0</span>/20</p>
+            <p>Obsession: <span id="obsessionScore">0</span>/20</p>
+            <p>Resilience: <span id="resilienceScore">0</span>/20</p>
+            <p>Empathy: <span id="empathyScore">0</span>/20</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
